@@ -1,0 +1,399 @@
+# Translation of Themes - Tiny Framework in Russian
+# This file is distributed under the same license as the Themes - Tiny Framework package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-07 16:15:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - Tiny Framework\n"
+
+#. Description of the plugin/theme
+msgid "Tiny Framework theme was created with the future in mind and encompasses all the best features of the default WordPress themes in one place, adds full accessibility and Structured Data Markup with Schema.org microdata format support. Fast start is ensured with very extensive documentation! Tiny Framework features elegant responsive mobile-first design, HTML5 ready structure of Underscores, custom per-post headers, custom logo, three footer widgets, FontAwesome icon webfont and Google Fonts support. Web developers will enjoy integrated Theme Hook Alliance custom action hooks. It's all there, you have everything in one neat package. Along with the main theme you will find an example of a child theme - an easy way to start developing with child themes! Tiny Framework can be used as a learning tool or your own little web development \"framework\". With its unique \"Coding Tips System\" Tiny Framework helps to understand how to extend parent themes and build your own child themes, hacking them the way you want. You get the best coding examples from default WordPress themes and the best hacks from the child theme. Please read readme.txt for a quick start guide, tips and tricks. For more information please see: http://mtomas.com/1/"
+msgstr "Тема Tiny Framework была создана с расчётом на будущее и включает в себя самые лучшие возможности стандартных тем WordPress, а также поддержку улучшенной доступности, разметки структурированных данных и микроданных формата Schema.org. Подробная документация поможет быстро начать работу. Tiny Framewor — это элегантный адаптивный дизайн для мобильных устройств, HTML5-совместимая структура Underscores, пользовательские индивидуальные заголовки для каждой записи, пользовательский логотип, три виджета в подвале, поддержка шрифтов Font Awesome и Google Fonts. Веб-разработчикам понравятся интегрированные пользовательские перехватчики событий Theme Hook Alliance. И всё это — здесь, в едином пакете. Вместе с основной темой вы найдете пример дочерней, который поможет вам в создании своих дочерних тем. Tiny Framework можно использовать как для изучения возможностей тем WordPress, так и для разработки вашего собственного фреймворка. Уникальная «Система советов по кодированию» поможет понять, как дополнять родительские темы и создавать свои дочерние, модифицируя их по вашему желанию. Вы получите лучшие примеры кода стандартных тем WordPress и лучшие модификации из дочерней темы. Пожалуйста, прочитайте файл readme.txt, содержащий краткое руководство, советы и рекомендации. Для получения дополнительной информации, пожалуйста, посетите сайт http://mtomas.com/1/"
+
+#. Theme Name of the plugin/theme
+msgid "Tiny Framework"
+msgstr "Tiny Framework"
+
+#. translators: 1: title.
+#: comments.php:39
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "%1$s: 1 комментарий"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: post title.
+#: inc/template-tags.php:390 inc/template-tags.php:474
+msgid "...continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "...читать далее<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: inc/template-tags.php:364
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Изменить<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. translators: %s: post title.
+#: inc/template-tags.php:124 inc/template-tags.php:223
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Добавить комментарий<span class=\"screen-reader-text\"> к записи %s</span>"
+
+#. translators: %s: Theme name.
+#: functions.php:857
+msgid " and %s"
+msgstr "и %s"
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: functions.php:855
+msgid "Powered by %s"
+msgstr "Работает на %s"
+
+#. Template Name of the plugin/theme
+msgid "Links"
+msgstr "Ссылки"
+
+#. Template Name of the plugin/theme
+msgid "Full-width Page Template, No Sidebar"
+msgstr "Шаблон без боковой колонки"
+
+#. Template Name of the plugin/theme
+msgid "Front Page Template"
+msgstr "Шаблон главной страницы"
+
+#. translators: %s: Post publishing date linked to post.
+#: template-parts/content-status.php:29
+msgid "Permalink to %s"
+msgstr "Постоянная ссылка: %s"
+
+#: template-parts/content-none.php:43
+msgid "Apologies, but no results were found. Please try again with some different keywords."
+msgstr "Извините, по вашему запросу ничего не найдено. Попробуйте другие ключевые слова."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:30
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начните отсюда</a>."
+
+#: template-parts/content-none.php:19
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: template-parts/content-link.php:27
+msgid "Link"
+msgstr "Ссылка"
+
+#. translators: %s: Post Author's name.
+#: template-parts/author-bio.php:44
+msgid "View all posts by %s"
+msgstr "Посмотреть все записи автора %s"
+
+#. translators: %s: Post Author's name.
+#: template-parts/author-bio.php:30
+msgid "About <span itemprop=\"name\">%s</span>"
+msgstr "Об авторе <span itemprop=\"name\">%s</span>"
+
+#: single.php:37
+msgid "Previous article:"
+msgstr "Предыдущая запись:"
+
+#: single.php:35
+msgid "Next article:"
+msgstr "Следующая запись:"
+
+#. translators: %s: search query.
+#: search.php:27
+msgid "Search Results for: %s"
+msgstr "Результаты поиска: %s"
+
+#: inc/template-tags.php:512
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: inc/template-tags.php:511
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: inc/template-tags.php:494 inc/template-tags.php:513
+msgid "Page"
+msgstr "Страница"
+
+#: inc/template-tags.php:490
+msgid "Pages:"
+msgstr "Страниц:"
+
+#: inc/template-tags.php:338
+msgid "Reply"
+msgstr "Ответить"
+
+#: inc/template-tags.php:333
+msgid "Edit"
+msgstr "Изменить"
+
+#: inc/template-tags.php:328
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает проверки."
+
+#. translators: 1: date, 2: time.
+#: inc/template-tags.php:322
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
+
+#: inc/template-tags.php:316
+msgid "Post author"
+msgstr "Автор записи"
+
+#: inc/template-tags.php:301
+msgid "(Edit)"
+msgstr "(Изменить)"
+
+#: inc/template-tags.php:301
+msgid "Pingback:"
+msgstr "Уведомление:"
+
+#: inc/template-tags.php:213
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "Полный размер"
+
+#: inc/template-tags.php:202
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr "Метки"
+
+#: inc/template-tags.php:194
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr "Рубрики"
+
+#: inc/template-tags.php:191 inc/template-tags.php:199
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:155
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Формат"
+
+#. translators: %s: comments number.
+#: template-parts/content.php:63
+msgid "Leave a comment"
+msgstr "Добавить комментарий"
+
+#: inc/template-tags.php:112 inc/template-tags.php:176
+msgctxt "Used before publish date."
+msgid "Published on"
+msgstr "Опубликовано"
+
+#: inc/template-tags.php:91 inc/template-tags.php:185
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr "Автор"
+
+#: inc/template-tags.php:68
+msgid "Author:"
+msgstr "Автор:"
+
+#: inc/template-tags.php:63
+msgid "Tag:"
+msgstr "Метка: "
+
+#: inc/template-tags.php:58
+msgid "Category:"
+msgstr "Раздел:"
+
+#: template-parts/content.php:63
+msgctxt "comments number"
+msgid "%"
+msgstr "%"
+
+#: template-parts/content.php:63
+msgctxt "comments number"
+msgid "1"
+msgstr "1"
+
+#: template-parts/content.php:23
+msgid "Featured article"
+msgstr "Избранная запись"
+
+#: inc/customizer.php:41
+msgid "Display Site Title &amp; Tagline"
+msgstr "Отображать название и описание"
+
+#: inc/customizer.php:38
+msgid "Site Title Color"
+msgstr "Цвет названия сайта"
+
+#: inc/custom-header.php:63
+msgctxt "header image description"
+msgid "Third"
+msgstr "Вариант 3"
+
+#: inc/custom-header.php:58
+msgctxt "header image description"
+msgid "Second"
+msgstr "Вариант 2"
+
+#: inc/custom-header.php:53
+msgctxt "header image description"
+msgid "First"
+msgstr "Вариант 1"
+
+#. translators: %s: WordPress version number.
+#: inc/back-compat.php:40 inc/back-compat.php:52 inc/back-compat.php:65
+msgid "Tiny Framework requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
+msgstr "Тема Tiny Framework требует WordPress версии 4.4 и выше. У вас версия %s. Пожалуйста, обновите WordPress и попробуйте ещё раз."
+
+#. translators: %s: Link to Tiny Framework comprehensive guide.
+#: inc/admin-notice.php:22
+msgid "Thank you for using Tiny Framework! Please check out a valuable user guide: <a target=\"_blank\" href=\"%s\">How to use Tiny Framework and its child themes: a comprehensive guide</a>. Happy coding!"
+msgstr "Спасибо за выбор Tiny Framework! Пожалуйста, ознакомьтесь с <a target=\"_blank\" href=\"%s\">подробной инструкцией по использованию Tiny Framework и её дочерних тем</a>. Удачи!"
+
+#: image.php:94
+msgid "Next image"
+msgstr "Следующее изображение"
+
+#: image.php:94
+msgid "Previous image"
+msgstr "Предыдущее изображение"
+
+#: header.php:102
+msgid "Menu"
+msgstr "Меню"
+
+#: header.php:49
+msgid "Advanced features of this website require that you enable JavaScript in your browser. Thank you!"
+msgstr "Для корректного отображения и функционирования сайта требуется включить JavaScript в настройках браузера. Спасибо!"
+
+#: header.php:43
+msgid "Skip to content"
+msgstr "Перейти к содержимому"
+
+#. translators: %s: Theme name.
+#: functions.php:763
+msgid "Using %s"
+msgstr "Тема %s"
+
+#: functions.php:625
+msgid "Opens in a new window"
+msgstr "Открывается в новом окне"
+
+#. translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: functions.php:500
+msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
+msgid "no-subset"
+msgstr "cyrillic"
+
+#. translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:464
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:417
+msgid "Found at the bottom of every page as the footer. Left Side. Use Text widget with no Title."
+msgstr "Отображается в левой части подвала. Используйте виджет «Текст» без заголовка."
+
+#: functions.php:415
+msgid "Footer Copyright Widget Area"
+msgstr "Виджет для копирайтов в подвале"
+
+#: functions.php:407
+msgid "Found at the bottom of every page (except 404s) as the footer. Right Side."
+msgstr "Отображается в правой части подвала (кроме страницы 404)."
+
+#: functions.php:405
+msgid "Third Footer Widget Area"
+msgstr "Третья область подвала"
+
+#: functions.php:397
+msgid "Found at the bottom of every page (except 404s) as the footer. Center."
+msgstr "Отображается в центральной части подвала (кроме страницы 404)."
+
+#: functions.php:395
+msgid "Second Footer Widget Area"
+msgstr "Вторая область подвала"
+
+#: functions.php:387
+msgid "Found at the bottom of every page (except 404s) as the footer. Left Side."
+msgstr "Отображается в левой части подвала (кроме страницы 404)."
+
+#: functions.php:385
+msgid "First Footer Widget Area"
+msgstr "Первая область подвала"
+
+#: functions.php:375
+msgid "Second Front Page Widget Area"
+msgstr "Вторая область главной страницы"
+
+#: functions.php:367 functions.php:377
+msgid "Appears when using the optional Front Page template with a page set as Static Front Page"
+msgstr "Отображается, если в качестве главной выбрана статическая страница с соответствующим шаблоном."
+
+#: functions.php:365
+msgid "First Front Page Widget Area"
+msgstr "Первая область главной страницы"
+
+#: functions.php:357
+msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
+msgstr "Отображается в записях и на страницах, за исключением главной страницы, имеющей свои собственные виджеты."
+
+#: functions.php:355 sidebar-front.php:26 sidebar.php:22
+msgid "Main Sidebar"
+msgstr "Главная боковая колонка"
+
+#: functions.php:206 inc/menu-social.php:14 inc/menu-social.php:16
+msgid "Social Links Menu"
+msgstr "Меню социальных ссылок"
+
+#: functions.php:205 header.php:99 header.php:101
+msgid "Primary Menu"
+msgstr "Основное меню"
+
+#: footer.php:23
+msgid "Footer Content"
+msgstr "Содержимое подвала"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто."
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:45
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%2$s: %1$s комментарий"
+msgstr[1] "%2$s: %1$s комментария"
+msgstr[2] "%2$s: %1$s комментариев"
+
+#. translators: %1$s: smiley
+#: 404.php:41
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Загляните в архивы по месяцам %1$s"
+
+#: 404.php:33 template-parts/content-none.php:49
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Запрошенную информацию найти не удалось. Возможно, будет полезен поиск по сайту."
+
+#: 404.php:28
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Неприятная новость"
+
+#. Author URI of the plugin/theme
+msgid "http://mtomas.com/"
+msgstr "http://mtomas.com/"
+
+#. Author of the plugin/theme
+msgid "Tomas Mackevicius"
+msgstr "Tomas Mackevicius"
+
+#. Theme URI of the plugin/theme
+msgid "http://mtomas.com/1/"
+msgstr "http://mtomas.com/1/"
