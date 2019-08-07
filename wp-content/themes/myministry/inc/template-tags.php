@@ -105,7 +105,7 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
 		printf('<div class="meta-by-date">');
 			// Posted by
 			twentynineteen_posted_by();
-		printf('<div class="wrapper-avatar"><img src="'.esc_url( home_url( '/' ) ).'/wp-content/vendored-img/avatar.png" alt="author"></div>');
+		printf('<div class="wrapper-avatar"><img src="'.esc_url( home_url( '/' ) ).'/wp-content/themes/myministry/img/avatar.png" alt="author"></div>');
 			// Posted on
 			twentynineteen_posted_on();
 		printf('</div>');	

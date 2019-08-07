@@ -15,7 +15,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" style="background-image:url(<?php echo esc_url( home_url( '/' ) ); ?>wp-content/vendored-img/MYMINISTRY_footer.jpg)">
+	<footer id="colophon" class="site-footer" style="background-image:url(<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/myministry/img/MYMINISTRY_footer.jpg)">
 		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 		<div class="site-info">
 			<?php $blog_info = get_bloginfo( 'name' ); ?>

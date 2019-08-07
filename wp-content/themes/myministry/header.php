@@ -46,7 +46,7 @@
 					</div>
 					<?php rewind_posts(); ?>
 				</div>
-			<?php endif; ?>-->
+			<?php endif; ?>
 		</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

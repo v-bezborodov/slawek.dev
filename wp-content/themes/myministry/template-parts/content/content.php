@@ -19,7 +19,7 @@
 
 		<figure class="post-thumbnail no-image">
 		<a class="post-thumbnail-inner" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-			<img class="no-image" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/vendored-img/no-image-icon-11.PNG">
+			<img class="no-image" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/myministry/img/no-image-icon-11.PNG">
 		</a>
 	</figure>
 	<?php endif;?>
