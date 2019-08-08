@@ -1,4 +1,5 @@
 .idea
+.gitconfig
 wp-config.php
 uploads
 wp-content/themes/myministry/node_modules/
