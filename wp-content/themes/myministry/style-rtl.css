@@ -1,21 +1,20 @@
 @charset "UTF-8";
 /*
-Theme Name: Twenty Nineteen
-Theme URI: https://github.com/WordPress/twentynineteen
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Theme Name: MyMinistry
+Theme URI: https://github.com/wenceslawus/slawek.dev
+Author: Slawek Bezborodov
+Author URI: https://slawek.dev/
+Description: This theme designed mostly for those who are blogging about IT-development. MyMinistry is designed to be adaptable to a wide range of screens.
 Requires at least: WordPress 4.9.6
-Version: 1.3
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: twentynineteen
+Text Domain: myministry
 Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Twenty Nineteen is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Myministry is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -63,6 +62,26 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @font-face {
   font-family: 'NonBreakingSpaceOverride';
   src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAA0AAAAACDQAAALTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCahEICjx3CywAATYCJANUBCAFhiEHgWwbXQfILgpsY+rQRRARwyAs6uL7pxzYhxEE+32b3aeHmifR6tklkS9hiZA0ewkqGRJE+H7/+6378ASViK/PGeavqJyOzsceKi1s3BCiQsiOdn1r/RBgIJYEgCUhbm/8/8/h4saPssnTNkkiWUBrTRtjmQSajw3Ui3pZ3LYDPD+XG2C3JA/yKAS8/rU5eNfuGqRf4eNNgV4YAlIIgxglEkWe6FYpq10+wi3g+/nUgvgPFczNrz/RsTgVm/zfbPuHZlsuQECxuyqBcQwKFBjFgKO8AqP4bAN9tFJtnM9xPcbNjeXS/x1wY/xU52f5W/X1+9cnH4YwKIaoRRAkUkj/YlAAeF/624foiIDBgBmgQBeGAyhBljUPZUm/l2dTvmpqcBDUOHdbPZWd8JsBAsGr4w8/EDn82/bUPx4eh0YNrQTBuHO2FjQEAGBwK0DeI37DpQVqdERS4gZBhpeUhWCfLFz7J99aEBgsJCHvUGAdAPp4IADDCAPCEFMGpMZ9AQpTfQtQGhLbGVBZFV8BaqNyP68oTZgHNj3M8kBPfXTTC9t90UuzYhy9ciH0grVlOcqyCytisvbsERsEYztiznR0WCrmTksJwbSNK6fd1Rvr25I9oLvctUoEbNOmXJbqgYgPXEHJ82IUsrCnpkxh23F1rfZ2zcRnJYoXtauB3VTFkFXQg3uoZYD5qE0kdjDtoDoF1h2bulGmev5HbYhbrjtohQSRI4aNOkffIcT+d3v6atpaYh3JvPoQsztCcqvaBkppDSPcQ3bw3KaCBo1f5CJWTZEgW3LjLofYg51MaVezrx8xZitYbQ9KYeoRaqQdVLwSEfrKXLK1otCWOKNdR/YwYAfon5Yk8O2MJfSD10dPGA5PIJJQMkah0ugMJiv6x4Dm7LEa8xnrRGGGLAg4sAlbsA07sAt76DOsXKO3hIjtIlpnnFrt1qW4kh6NhS83P/6HB/fl1SMAAA==) format("woff2"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUQAA0AAAAACDQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE9AAAABwAAAAchf5yU0dERUYAAATYAAAAHAAAAB4AJwAbT1MvMgAAAaAAAABJAAAAYJAcgU5jbWFwAAACIAAAAF4AAAFqUUxBZ2dhc3AAAATQAAAACAAAAAgAAAAQZ2x5ZgAAApAAAAAyAAAAPL0n8y9oZWFkAAABMAAAADAAAAA2Fi93Z2hoZWEAAAFgAAAAHQAAACQOSgWaaG10eAAAAewAAAAzAAAAVC7TAQBsb2NhAAACgAAAABAAAAAsAOQBAm1heHAAAAGAAAAAHQAAACAAWQALbmFtZQAAAsQAAAF6AAADIYvD/Adwb3N0AAAEQAAAAI4AAADsapk2o3jaY2BkYGAA4ov5mwzj+W2+MnCzXwCKMNzgCBSB0LfbQDQ7AxuI4mBgAlEAFKQIRHjaY2BkYGD3+NvCwMDBAALsDAyMDKhAFAA3+wH3AAAAeNpjYGRgYBBl4GBgYgABEMnIABJzAPMZAAVmAGUAAAB42mNgZlJhnMDAysDCKsKygYGBYRqEZtrDYMT4D8gHSmEHjgUFOQwODAqqf9g9/rYwMLB7MNUAhRlBcsxBrMlASoGBEQAj8QtyAAAAeNrjYGBkAAGmWQwMjO8gmBnIZ2NA0ExAzNjAAFYJVn0ASBsD6VAIDZb7AtELAgANIgb9AHjaY2BgYGaAYBkGRgYQSAHyGMF8FgYPIM3HwMHAxMDGoMCwQIFLQV8hXvXP//9AcRCfAcb///h/ygPW+w/vb7olBjUHCTCyMcAFGZmABBO6AogThgZgIUsXAEDcEzcAAHjaY2BgECMCyoEgACZaAed42mNgYmRgYGBnYGNgYAZSDJqMgorCgoqCjECRXwwNrCAKSP5mAAFGBiRgyAAAi/YFBQAAeNqtkc1OwkAUhU/5M25cEhcsZick0AwlBJq6MWwgJkAgYV/KAA2lJeUn+hY+gktXvpKv4dLTMqKycGHsTZNv7px7z50ZAFd4hYHjdw1Ls4EiHjVncIFnzVnc4F1zDkWjrzmPW+NNcwGlzIRKI3fJlUyrEjZQxb3mDH2fNGfRx4vmHKqG0JzHg6E0F9DOlFBGBxUI1GEzLNT4S0aLuTtsGAEUuYcQHkyg3KmIum1bNUvKlrjbbAIleqHHnS4iSudpQcySMYtdFiXlAxzSbAwfMxK6kZoHKhbjjespMTioOPZnzI+4ucCeTVyKMVKLfeAS6vSWaTinuZwzyy/Dc7vaed+6KaV0kukdPUk6yOcctZPvvxxqksq2lEW8RvHjMEO2FCl/zy6p3NEm0R9OFSafJdldc4QVeyaaObMBO0/5cCaa6d9Ggyubxire+lEojscdjoWUR1xGOy8KD8mG2ZLO2l2paDc3A39qmU2z2W5YNv5+u79e6QfGJY/hAAB42m3NywrCMBQE0DupWp/1AYI7/6DEaLQu66Mrd35BKUWKJSlFv1+rue4cGM7shgR981qSon+ZNwUJ8iDgoYU2OvDRRQ99DDDECAHGmGCKmf80hZSx/Kik/LliFbtmN6xmt+yOjdg9GztV4tROnRwX/Bsaaw51nt4Lc7tWaZYHp/MlzKx51LZs5htNri+2AAAAAQAB//8AD3jaY2BkYGDgAWIxIGZiYARCESBmAfMYAAR6AEMAAAABAAAAANXtRbgAAAAA2AhRFAAAAADYCNuG) format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto");
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto");
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto");
+}
+
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto");
 }
 
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
@@ -823,7 +842,7 @@ input:lang(ru-RU)[type="submit"], .comment-navigation .nav-previous:lang(ru-RU),
 .entry .entry-content .wp-block-image figcaption:lang(ru-RU),
 .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(ru-RU),
 .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(ru-RU), .entry .entry-content .wp-block-file:lang(ru-RU), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ru-RU), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ru-RU), .wp-caption-text:lang(ru-RU), .gallery-caption:lang(ru-RU) {
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body:lang(sah), button:lang(sah),
@@ -1232,61 +1251,235 @@ input:lang(zh-CN)[type="submit"], .comment-navigation .nav-previous:lang(zh-CN),
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif;
 }
 
-body:lang(bn-BD, hi-IN, mr, ne-NP), button:lang(bn-BD, hi-IN, mr, ne-NP),
-input:lang(bn-BD, hi-IN, mr, ne-NP),
-select:lang(bn-BD, hi-IN, mr, ne-NP),
-optgroup:lang(bn-BD, hi-IN, mr, ne-NP),
-textarea:lang(bn-BD, hi-IN, mr, ne-NP), .author-description .author-link:lang(bn-BD, hi-IN, mr, ne-NP),
-.comment-metadata:lang(bn-BD, hi-IN, mr, ne-NP),
-.comment-reply-link:lang(bn-BD, hi-IN, mr, ne-NP),
-.comments-title:lang(bn-BD, hi-IN, mr, ne-NP),
-.comment-author .fn:lang(bn-BD, hi-IN, mr, ne-NP),
-.discussion-meta-info:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry-meta:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry-footer:lang(bn-BD, hi-IN, mr, ne-NP),
-.main-navigation:lang(bn-BD, hi-IN, mr, ne-NP),
-.no-comments:lang(bn-BD, hi-IN, mr, ne-NP),
-.not-found .page-title:lang(bn-BD, hi-IN, mr, ne-NP),
-.error-404 .page-title:lang(bn-BD, hi-IN, mr, ne-NP),
-.post-navigation .post-title:lang(bn-BD, hi-IN, mr, ne-NP),
-.page-links:lang(bn-BD, hi-IN, mr, ne-NP),
-.page-description:lang(bn-BD, hi-IN, mr, ne-NP),
-.pagination .nav-links:lang(bn-BD, hi-IN, mr, ne-NP),
-.sticky-post:lang(bn-BD, hi-IN, mr, ne-NP),
-.site-title:lang(bn-BD, hi-IN, mr, ne-NP),
-.site-info:lang(bn-BD, hi-IN, mr, ne-NP),
-#cancel-comment-reply-link:lang(bn-BD, hi-IN, mr, ne-NP),
-h1:lang(bn-BD, hi-IN, mr, ne-NP),
-h2:lang(bn-BD, hi-IN, mr, ne-NP),
-h3:lang(bn-BD, hi-IN, mr, ne-NP),
-h4:lang(bn-BD, hi-IN, mr, ne-NP),
-h5:lang(bn-BD, hi-IN, mr, ne-NP),
-h6:lang(bn-BD, hi-IN, mr, ne-NP), .page-title:lang(bn-BD, hi-IN, mr, ne-NP), blockquote cite:lang(bn-BD, hi-IN, mr, ne-NP), table:lang(bn-BD, hi-IN, mr, ne-NP), .button:lang(bn-BD, hi-IN, mr, ne-NP),
-input:lang(bn-BD, hi-IN, mr, ne-NP)[type="button"],
-input:lang(bn-BD, hi-IN, mr, ne-NP)[type="reset"],
-input:lang(bn-BD, hi-IN, mr, ne-NP)[type="submit"], .comment-navigation .nav-previous:lang(bn-BD, hi-IN, mr, ne-NP),
-.comment-navigation .nav-next:lang(bn-BD, hi-IN, mr, ne-NP), .comment-list .pingback .comment-body:lang(bn-BD, hi-IN, mr, ne-NP),
-.comment-list .trackback .comment-body:lang(bn-BD, hi-IN, mr, ne-NP), .comment-list .pingback .comment-body .comment-edit-link:lang(bn-BD, hi-IN, mr, ne-NP),
-.comment-list .trackback .comment-body .comment-edit-link:lang(bn-BD, hi-IN, mr, ne-NP), .comment-form .comment-notes:lang(bn-BD, hi-IN, mr, ne-NP),
-.comment-form label:lang(bn-BD, hi-IN, mr, ne-NP), .widget_archive ul li:lang(bn-BD, hi-IN, mr, ne-NP),
-.widget_categories ul li:lang(bn-BD, hi-IN, mr, ne-NP),
-.widget_meta ul li:lang(bn-BD, hi-IN, mr, ne-NP),
-.widget_nav_menu ul li:lang(bn-BD, hi-IN, mr, ne-NP),
-.widget_pages ul li:lang(bn-BD, hi-IN, mr, ne-NP),
-.widget_recent_comments ul li:lang(bn-BD, hi-IN, mr, ne-NP),
-.widget_recent_entries ul li:lang(bn-BD, hi-IN, mr, ne-NP),
-.widget_rss ul li:lang(bn-BD, hi-IN, mr, ne-NP), .widget_tag_cloud .tagcloud:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-button .wp-block-button__link:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-archives li:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-categories li:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-latest-posts li:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-verse:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .has-drop-cap:lang(bn-BD, hi-IN, mr, ne-NP):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-cover-image h2:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-cover h2:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-audio figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-video figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-image figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
-.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-file:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-file .wp-block-file__button:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(bn-BD, hi-IN, mr, ne-NP), .wp-caption-text:lang(bn-BD, hi-IN, mr, ne-NP), .gallery-caption:lang(bn-BD, hi-IN, mr, ne-NP) {
+body:lang(bn-BD), button:lang(bn-BD),
+input:lang(bn-BD),
+select:lang(bn-BD),
+optgroup:lang(bn-BD),
+textarea:lang(bn-BD), .author-description .author-link:lang(bn-BD),
+.comment-metadata:lang(bn-BD),
+.comment-reply-link:lang(bn-BD),
+.comments-title:lang(bn-BD),
+.comment-author .fn:lang(bn-BD),
+.discussion-meta-info:lang(bn-BD),
+.entry-meta:lang(bn-BD),
+.entry-footer:lang(bn-BD),
+.main-navigation:lang(bn-BD),
+.no-comments:lang(bn-BD),
+.not-found .page-title:lang(bn-BD),
+.error-404 .page-title:lang(bn-BD),
+.post-navigation .post-title:lang(bn-BD),
+.page-links:lang(bn-BD),
+.page-description:lang(bn-BD),
+.pagination .nav-links:lang(bn-BD),
+.sticky-post:lang(bn-BD),
+.site-title:lang(bn-BD),
+.site-info:lang(bn-BD),
+#cancel-comment-reply-link:lang(bn-BD),
+h1:lang(bn-BD),
+h2:lang(bn-BD),
+h3:lang(bn-BD),
+h4:lang(bn-BD),
+h5:lang(bn-BD),
+h6:lang(bn-BD), .page-title:lang(bn-BD), blockquote cite:lang(bn-BD), table:lang(bn-BD), .button:lang(bn-BD),
+input:lang(bn-BD)[type="button"],
+input:lang(bn-BD)[type="reset"],
+input:lang(bn-BD)[type="submit"], .comment-navigation .nav-previous:lang(bn-BD),
+.comment-navigation .nav-next:lang(bn-BD), .comment-list .pingback .comment-body:lang(bn-BD),
+.comment-list .trackback .comment-body:lang(bn-BD), .comment-list .pingback .comment-body .comment-edit-link:lang(bn-BD),
+.comment-list .trackback .comment-body .comment-edit-link:lang(bn-BD), .comment-form .comment-notes:lang(bn-BD),
+.comment-form label:lang(bn-BD), .widget_archive ul li:lang(bn-BD),
+.widget_categories ul li:lang(bn-BD),
+.widget_meta ul li:lang(bn-BD),
+.widget_nav_menu ul li:lang(bn-BD),
+.widget_pages ul li:lang(bn-BD),
+.widget_recent_comments ul li:lang(bn-BD),
+.widget_recent_entries ul li:lang(bn-BD),
+.widget_rss ul li:lang(bn-BD), .widget_tag_cloud .tagcloud:lang(bn-BD), .entry .entry-content .wp-block-button .wp-block-button__link:lang(bn-BD), .entry .entry-content .wp-block-archives li:lang(bn-BD),
+.entry .entry-content .wp-block-categories li:lang(bn-BD),
+.entry .entry-content .wp-block-latest-posts li:lang(bn-BD), .entry .entry-content .wp-block-verse:lang(bn-BD), .entry .entry-content .has-drop-cap:lang(bn-BD):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(bn-BD), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(bn-BD),
+.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(bn-BD),
+.entry .entry-content .wp-block-cover-image h2:lang(bn-BD),
+.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(bn-BD),
+.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(bn-BD),
+.entry .entry-content .wp-block-cover h2:lang(bn-BD), .entry .entry-content .wp-block-audio figcaption:lang(bn-BD),
+.entry .entry-content .wp-block-video figcaption:lang(bn-BD),
+.entry .entry-content .wp-block-image figcaption:lang(bn-BD),
+.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(bn-BD),
+.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(bn-BD), .entry .entry-content .wp-block-file:lang(bn-BD), .entry .entry-content .wp-block-file .wp-block-file__button:lang(bn-BD), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(bn-BD), .wp-caption-text:lang(bn-BD), .gallery-caption:lang(bn-BD) {
+  font-family: Arial, sans-serif;
+}
+
+body:lang(hi-IN), button:lang(hi-IN),
+input:lang(hi-IN),
+select:lang(hi-IN),
+optgroup:lang(hi-IN),
+textarea:lang(hi-IN), .author-description .author-link:lang(hi-IN),
+.comment-metadata:lang(hi-IN),
+.comment-reply-link:lang(hi-IN),
+.comments-title:lang(hi-IN),
+.comment-author .fn:lang(hi-IN),
+.discussion-meta-info:lang(hi-IN),
+.entry-meta:lang(hi-IN),
+.entry-footer:lang(hi-IN),
+.main-navigation:lang(hi-IN),
+.no-comments:lang(hi-IN),
+.not-found .page-title:lang(hi-IN),
+.error-404 .page-title:lang(hi-IN),
+.post-navigation .post-title:lang(hi-IN),
+.page-links:lang(hi-IN),
+.page-description:lang(hi-IN),
+.pagination .nav-links:lang(hi-IN),
+.sticky-post:lang(hi-IN),
+.site-title:lang(hi-IN),
+.site-info:lang(hi-IN),
+#cancel-comment-reply-link:lang(hi-IN),
+h1:lang(hi-IN),
+h2:lang(hi-IN),
+h3:lang(hi-IN),
+h4:lang(hi-IN),
+h5:lang(hi-IN),
+h6:lang(hi-IN), .page-title:lang(hi-IN), blockquote cite:lang(hi-IN), table:lang(hi-IN), .button:lang(hi-IN),
+input:lang(hi-IN)[type="button"],
+input:lang(hi-IN)[type="reset"],
+input:lang(hi-IN)[type="submit"], .comment-navigation .nav-previous:lang(hi-IN),
+.comment-navigation .nav-next:lang(hi-IN), .comment-list .pingback .comment-body:lang(hi-IN),
+.comment-list .trackback .comment-body:lang(hi-IN), .comment-list .pingback .comment-body .comment-edit-link:lang(hi-IN),
+.comment-list .trackback .comment-body .comment-edit-link:lang(hi-IN), .comment-form .comment-notes:lang(hi-IN),
+.comment-form label:lang(hi-IN), .widget_archive ul li:lang(hi-IN),
+.widget_categories ul li:lang(hi-IN),
+.widget_meta ul li:lang(hi-IN),
+.widget_nav_menu ul li:lang(hi-IN),
+.widget_pages ul li:lang(hi-IN),
+.widget_recent_comments ul li:lang(hi-IN),
+.widget_recent_entries ul li:lang(hi-IN),
+.widget_rss ul li:lang(hi-IN), .widget_tag_cloud .tagcloud:lang(hi-IN), .entry .entry-content .wp-block-button .wp-block-button__link:lang(hi-IN), .entry .entry-content .wp-block-archives li:lang(hi-IN),
+.entry .entry-content .wp-block-categories li:lang(hi-IN),
+.entry .entry-content .wp-block-latest-posts li:lang(hi-IN), .entry .entry-content .wp-block-verse:lang(hi-IN), .entry .entry-content .has-drop-cap:lang(hi-IN):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(hi-IN), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(hi-IN),
+.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(hi-IN),
+.entry .entry-content .wp-block-cover-image h2:lang(hi-IN),
+.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(hi-IN),
+.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(hi-IN),
+.entry .entry-content .wp-block-cover h2:lang(hi-IN), .entry .entry-content .wp-block-audio figcaption:lang(hi-IN),
+.entry .entry-content .wp-block-video figcaption:lang(hi-IN),
+.entry .entry-content .wp-block-image figcaption:lang(hi-IN),
+.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(hi-IN),
+.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(hi-IN), .entry .entry-content .wp-block-file:lang(hi-IN), .entry .entry-content .wp-block-file .wp-block-file__button:lang(hi-IN), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(hi-IN), .wp-caption-text:lang(hi-IN), .gallery-caption:lang(hi-IN) {
+  font-family: Arial, sans-serif;
+}
+
+body:lang(mr), button:lang(mr),
+input:lang(mr),
+select:lang(mr),
+optgroup:lang(mr),
+textarea:lang(mr), .author-description .author-link:lang(mr),
+.comment-metadata:lang(mr),
+.comment-reply-link:lang(mr),
+.comments-title:lang(mr),
+.comment-author .fn:lang(mr),
+.discussion-meta-info:lang(mr),
+.entry-meta:lang(mr),
+.entry-footer:lang(mr),
+.main-navigation:lang(mr),
+.no-comments:lang(mr),
+.not-found .page-title:lang(mr),
+.error-404 .page-title:lang(mr),
+.post-navigation .post-title:lang(mr),
+.page-links:lang(mr),
+.page-description:lang(mr),
+.pagination .nav-links:lang(mr),
+.sticky-post:lang(mr),
+.site-title:lang(mr),
+.site-info:lang(mr),
+#cancel-comment-reply-link:lang(mr),
+h1:lang(mr),
+h2:lang(mr),
+h3:lang(mr),
+h4:lang(mr),
+h5:lang(mr),
+h6:lang(mr), .page-title:lang(mr), blockquote cite:lang(mr), table:lang(mr), .button:lang(mr),
+input:lang(mr)[type="button"],
+input:lang(mr)[type="reset"],
+input:lang(mr)[type="submit"], .comment-navigation .nav-previous:lang(mr),
+.comment-navigation .nav-next:lang(mr), .comment-list .pingback .comment-body:lang(mr),
+.comment-list .trackback .comment-body:lang(mr), .comment-list .pingback .comment-body .comment-edit-link:lang(mr),
+.comment-list .trackback .comment-body .comment-edit-link:lang(mr), .comment-form .comment-notes:lang(mr),
+.comment-form label:lang(mr), .widget_archive ul li:lang(mr),
+.widget_categories ul li:lang(mr),
+.widget_meta ul li:lang(mr),
+.widget_nav_menu ul li:lang(mr),
+.widget_pages ul li:lang(mr),
+.widget_recent_comments ul li:lang(mr),
+.widget_recent_entries ul li:lang(mr),
+.widget_rss ul li:lang(mr), .widget_tag_cloud .tagcloud:lang(mr), .entry .entry-content .wp-block-button .wp-block-button__link:lang(mr), .entry .entry-content .wp-block-archives li:lang(mr),
+.entry .entry-content .wp-block-categories li:lang(mr),
+.entry .entry-content .wp-block-latest-posts li:lang(mr), .entry .entry-content .wp-block-verse:lang(mr), .entry .entry-content .has-drop-cap:lang(mr):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(mr), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(mr),
+.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(mr),
+.entry .entry-content .wp-block-cover-image h2:lang(mr),
+.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(mr),
+.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(mr),
+.entry .entry-content .wp-block-cover h2:lang(mr), .entry .entry-content .wp-block-audio figcaption:lang(mr),
+.entry .entry-content .wp-block-video figcaption:lang(mr),
+.entry .entry-content .wp-block-image figcaption:lang(mr),
+.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(mr),
+.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(mr), .entry .entry-content .wp-block-file:lang(mr), .entry .entry-content .wp-block-file .wp-block-file__button:lang(mr), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(mr), .wp-caption-text:lang(mr), .gallery-caption:lang(mr) {
+  font-family: Arial, sans-serif;
+}
+
+body:lang(ne-NP), button:lang(ne-NP),
+input:lang(ne-NP),
+select:lang(ne-NP),
+optgroup:lang(ne-NP),
+textarea:lang(ne-NP), .author-description .author-link:lang(ne-NP),
+.comment-metadata:lang(ne-NP),
+.comment-reply-link:lang(ne-NP),
+.comments-title:lang(ne-NP),
+.comment-author .fn:lang(ne-NP),
+.discussion-meta-info:lang(ne-NP),
+.entry-meta:lang(ne-NP),
+.entry-footer:lang(ne-NP),
+.main-navigation:lang(ne-NP),
+.no-comments:lang(ne-NP),
+.not-found .page-title:lang(ne-NP),
+.error-404 .page-title:lang(ne-NP),
+.post-navigation .post-title:lang(ne-NP),
+.page-links:lang(ne-NP),
+.page-description:lang(ne-NP),
+.pagination .nav-links:lang(ne-NP),
+.sticky-post:lang(ne-NP),
+.site-title:lang(ne-NP),
+.site-info:lang(ne-NP),
+#cancel-comment-reply-link:lang(ne-NP),
+h1:lang(ne-NP),
+h2:lang(ne-NP),
+h3:lang(ne-NP),
+h4:lang(ne-NP),
+h5:lang(ne-NP),
+h6:lang(ne-NP), .page-title:lang(ne-NP), blockquote cite:lang(ne-NP), table:lang(ne-NP), .button:lang(ne-NP),
+input:lang(ne-NP)[type="button"],
+input:lang(ne-NP)[type="reset"],
+input:lang(ne-NP)[type="submit"], .comment-navigation .nav-previous:lang(ne-NP),
+.comment-navigation .nav-next:lang(ne-NP), .comment-list .pingback .comment-body:lang(ne-NP),
+.comment-list .trackback .comment-body:lang(ne-NP), .comment-list .pingback .comment-body .comment-edit-link:lang(ne-NP),
+.comment-list .trackback .comment-body .comment-edit-link:lang(ne-NP), .comment-form .comment-notes:lang(ne-NP),
+.comment-form label:lang(ne-NP), .widget_archive ul li:lang(ne-NP),
+.widget_categories ul li:lang(ne-NP),
+.widget_meta ul li:lang(ne-NP),
+.widget_nav_menu ul li:lang(ne-NP),
+.widget_pages ul li:lang(ne-NP),
+.widget_recent_comments ul li:lang(ne-NP),
+.widget_recent_entries ul li:lang(ne-NP),
+.widget_rss ul li:lang(ne-NP), .widget_tag_cloud .tagcloud:lang(ne-NP), .entry .entry-content .wp-block-button .wp-block-button__link:lang(ne-NP), .entry .entry-content .wp-block-archives li:lang(ne-NP),
+.entry .entry-content .wp-block-categories li:lang(ne-NP),
+.entry .entry-content .wp-block-latest-posts li:lang(ne-NP), .entry .entry-content .wp-block-verse:lang(ne-NP), .entry .entry-content .has-drop-cap:lang(ne-NP):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(ne-NP), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(ne-NP),
+.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(ne-NP),
+.entry .entry-content .wp-block-cover-image h2:lang(ne-NP),
+.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(ne-NP),
+.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(ne-NP),
+.entry .entry-content .wp-block-cover h2:lang(ne-NP), .entry .entry-content .wp-block-audio figcaption:lang(ne-NP),
+.entry .entry-content .wp-block-video figcaption:lang(ne-NP),
+.entry .entry-content .wp-block-image figcaption:lang(ne-NP),
+.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(ne-NP),
+.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(ne-NP), .entry .entry-content .wp-block-file:lang(ne-NP), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ne-NP), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ne-NP), .wp-caption-text:lang(ne-NP), .gallery-caption:lang(ne-NP) {
   font-family: Arial, sans-serif;
 }
 
@@ -2038,7 +2231,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.8;
@@ -2052,7 +2245,7 @@ select,
 optgroup,
 textarea {
   color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.8;
   text-rendering: optimizeLegibility;
@@ -2112,7 +2305,7 @@ h6 {
 }
 
 .page-title {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
 }
 
 .site-branding,
@@ -2138,7 +2331,8 @@ h1 {
 .error-404 .page-title,
 .has-larger-font-size,
 h2 {
-  font-size: 1.6875em;
+  font-size: 1.125em;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2147,7 +2341,7 @@ h2 {
   .error-404 .page-title,
   .has-larger-font-size,
   h2 {
-    font-size: 2.25em;
+    font-size: 1.125em;
   }
 }
 
@@ -2333,16 +2527,6 @@ h5,
 h6 {
   clear: both;
   margin: 1rem 0;
-}
-
-h1:not(.site-title):before,
-h2:before {
-  background: #767676;
-  content: "\020";
-  display: block;
-  height: 2px;
-  margin: 1rem 0;
-  width: 1em;
 }
 
 hr {
@@ -2558,8 +2742,8 @@ a:active {
 }
 
 a:focus {
-  outline: thin dotted;
-  text-decoration: underline;
+  outline: none;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -2935,14 +3119,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3038,7 +3222,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3322,9 +3506,14 @@ body.page .main-navigation {
   display: inline;
 }
 
+.pagination {
+  width: 100%;
+}
+
 .pagination .nav-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0 calc(.5 * 1rem);
 }
 
@@ -3362,7 +3551,6 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .pagination .nav-links {
-    margin-right: calc(10% + 60px);
     padding: 0;
   }
   .pagination .nav-links .prev > *,
@@ -3544,7 +3732,6 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .site-header {
     margin: 0;
-    padding: 3rem 0;
   }
   .site-header.featured-image {
     min-height: 100vh;
@@ -3555,12 +3742,18 @@ body.page .main-navigation {
 .site-branding {
   color: #767676;
   position: relative;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .site-branding {
     margin: 0 calc(10% + 60px);
   }
+}
+
+.site-header-image img {
+  display: block;
+  margin: 0 auto;
 }
 
 .site-logo {
@@ -3572,10 +3765,6 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .site-logo {
     margin-bottom: 0;
-    position: absolute;
-    left: calc(100% + (1.25 * 1rem));
-    top: 4px;
-    z-index: 999;
   }
 }
 
@@ -3605,19 +3794,33 @@ body.page .main-navigation {
   }
 }
 
+.site-title-wrapper {
+  display: inline-block;
+  border: 1px solid #6e6e6e;
+  background-color: white;
+  border-radius: 40px;
+  padding-bottom: 0.3vw;
+  padding-top: 0.3vw;
+}
+
 .site-title {
-  margin: auto;
-  display: inline;
-  color: #111;
+  text-transform: uppercase;
+  color: #f47e7e;
+  font-size: 2vw;
+  font-weight: 300;
+  line-height: 1.1;
+  padding: 0 15px;
+  vertical-align: middle;
+  margin-bottom: 0;
   /* When there is no description set, make sure navigation appears below title. */
 }
 
 .site-title a {
-  color: #111;
+  color: #f47e7e;
 }
 
 .site-title a:link, .site-title a:visited {
-  color: #111;
+  color: #f47e7e;
 }
 
 .site-title a:hover {
@@ -3650,10 +3853,11 @@ body.page .main-navigation {
 }
 
 .site-description {
-  display: inline;
+  display: block;
   color: #767676;
   font-weight: normal;
-  margin: 0;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 .site-header.featured-image {
@@ -3981,6 +4185,26 @@ body.page .main-navigation {
   z-index: 1;
 }
 
+.main-page-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 910px;
+  margin: 0 auto;
+}
+
+.post-page-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 910px;
+  margin: 0 auto;
+}
+
 .updated:not(.published) {
   display: none;
 }
@@ -3990,11 +4214,11 @@ body.page .main-navigation {
   margin: 0 0 calc(1.5 * 1rem);
 }
 
-.entry {
-  margin-top: calc(6 * 1rem);
+.main-page-wrapper .post {
+  flex-grow: auto;
 }
 
-.entry:first-of-type {
+.entry {
   margin-top: 0;
 }
 
@@ -4013,21 +4237,88 @@ body.page .main-navigation {
   margin: 0;
 }
 
-.entry .entry-title:before {
-  background: #767676;
-  content: "\020";
-  display: block;
-  height: 2px;
-  margin: 1rem 0;
-  width: 1em;
-}
-
 .entry .entry-title a {
-  color: inherit;
+  color: #262626;
 }
 
 .entry .entry-title a:hover {
   color: #4a4a4a;
+}
+
+.entry .entry-categories-tags {
+  margin: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.entry .entry-categories-tags a {
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: black;
+  opacity: 0.5;
+}
+
+.entry .entry-categories-tags .tags-links, .entry .entry-categories-tags .cat-links {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.entry .entry-categories-tags .custom-tag, .entry .entry-categories-tags .custom-category {
+  padding: 1px 7px 5px;
+  margin: 0.1rem;
+  border: 1px solid #dee2e6;
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.entry .entry-categories-tags .custom-category {
+  background-color: #e8f3f4;
+}
+
+.entry .entry-categories-tags .custom-category:hover {
+  display: block;
+  background-color: #80bec3;
+}
+
+.entry .entry-categories-tags .custom-tag {
+  background-color: #f9fcfc;
+}
+
+.entry .entry-categories-tags .custom-tag:hover {
+  display: block;
+  background-color: #e8f3f4;
+}
+
+.entry .entry-categories-tags .custom-category a {
+  font-weight: 700;
+}
+
+.entry .entry-categories-tags .post-categories {
+  list-style: none;
+  padding-right: 0;
+  margin: 0;
+}
+
+.entry .entry-categories-tags .post-categories li {
+  padding: 1px 5px;
+  margin: 0.1rem;
+  border: 1px solid #dee2e6;
+  display: inline;
+}
+
+.entry .entry-categories-tags .post-categories a {
+  font-size: 0.7rem;
 }
 
 .entry .entry-meta,
@@ -4072,12 +4363,11 @@ body.page .main-navigation {
 }
 
 .entry .entry-footer {
-  margin: calc(2 * 1rem) 1rem 1rem;
+  margin: 0.7rem 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-footer {
-    margin: 1rem calc(10% + 60px) calc(3 * 1rem);
     max-width: calc(8 * (100vw / 12) - 28px);
   }
 }
@@ -4088,14 +4378,39 @@ body.page .main-navigation {
   }
 }
 
-.entry .post-thumbnail {
-  margin: 1rem;
+.entry .entry-footer .meta-comments-edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media only screen and (min-width: 768px) {
-  .entry .post-thumbnail {
-    margin: 1rem calc(10% + 60px);
-  }
+.entry .entry-footer .meta-comments-edit span {
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+}
+
+.entry .entry-footer .meta-by-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.entry .entry-footer .meta-by-date .wrapper-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.entry .entry-footer .meta-by-date .wrapper-avatar img {
+  width: 100%;
+  position: absolute;
+  top: -5px;
+}
+
+.entry .post-thumbnail {
+  margin: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .entry .post-thumbnail:focus {
@@ -4104,40 +4419,21 @@ body.page .main-navigation {
 
 .entry .post-thumbnail .post-thumbnail-inner {
   display: block;
+  height: 100%;
 }
 
 .entry .post-thumbnail .post-thumbnail-inner img {
   position: relative;
   display: block;
   width: 100%;
+  height: auto;
+  max-width: none;
 }
 
 .image-filters-enabled .entry .post-thumbnail {
   position: relative;
   display: block;
-}
-
-.image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner {
-  filter: grayscale(100%);
-}
-
-.image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner:after {
-  background: rgba(0, 0, 0, 0.35);
-  content: "";
-  display: block;
-  height: 100%;
-  opacity: .5;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 4;
-}
-
-@supports (mix-blend-mode: multiply) {
-  .image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner:after {
-    display: none;
-  }
+  overflow: hidden;
 }
 
 .image-filters-enabled .entry .post-thumbnail:before, .image-filters-enabled .entry .post-thumbnail:after {
@@ -4158,37 +4454,26 @@ body.page .main-navigation {
   z-index: 2;
 }
 
-.image-filters-enabled .entry .post-thumbnail:after {
-  background: #0073aa;
-  mix-blend-mode: multiply;
-  opacity: .8;
-  z-index: 3;
-  /* Browsers supporting mix-blend-mode don't need opacity < 1 */
-}
-
-@supports (mix-blend-mode: multiply) {
-  .image-filters-enabled .entry .post-thumbnail:after {
-    opacity: 1;
-  }
-}
-
 .entry .entry-content,
 .entry .entry-summary {
-  max-width: calc(100% - (2 * 1rem));
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content,
   .entry .entry-summary {
-    max-width: 80%;
-    margin: 0 10%;
-    padding: 0 60px;
+    margin: 0 0.5rem;
   }
 }
 
 .entry .entry-content p {
   word-wrap: break-word;
+  margin: 0;
+  text-align: justify;
+  opacity: 0.7;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-style: italic;
 }
 
 .entry .entry-content .more-link {
@@ -4795,7 +5080,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .hfeed .entry .entry-header {
-    margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    margin: 0 0.5rem calc(1rem / 2);
   }
 }
 
@@ -4839,7 +5124,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   #colophon .widget-area,
   #colophon .site-info {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: 1rem calc(10% + 60px);
   }
 }
 
@@ -4861,10 +5146,7 @@ body.page .main-navigation {
 
 #colophon .site-info {
   color: #767676;
-}
-
-#colophon .site-info a {
-  color: inherit;
+  text-align: center;
 }
 
 #colophon .site-info a:hover {
@@ -4872,9 +5154,45 @@ body.page .main-navigation {
   color: #0073aa;
 }
 
-#colophon .site-info .imprint,
+#colophon .site-info a, #colophon .site-info p {
+  display: inline;
+  color: white;
+}
+
 #colophon .site-info .privacy-policy-link {
   margin-left: 1rem;
+}
+
+#colophon .widget-custom-category {
+  padding: 1px 7px 5px;
+  margin: 0.1rem;
+  border: 1px solid #dee2e6;
+  display: inline-block;
+  line-height: 1.1;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+#colophon .widget-custom-category:hover {
+  background-color: #80bec3;
+}
+
+#colophon .widget-custom-category a {
+  color: white;
+}
+
+#colophon .widget-custom-tags {
+  padding: 1px 7px;
+  margin: 0.1rem;
+  border: 1px solid #dee2e6;
+  display: inline-block;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+}
+
+#colophon .widget-custom-tags:hover {
+  background-color: #80bec3;
 }
 
 /* Widgets */
@@ -4893,6 +5211,18 @@ body.page .main-navigation {
 
 .widget a:hover {
   color: #005177;
+}
+
+.widget_archive h2,
+.widget_categories h2,
+.widget_meta h2,
+.widget_nav_menu h2,
+.widget_pages h2,
+.widget_recent_comments h2,
+.widget_recent_entries h2,
+.widget_rss h2 {
+  color: white;
+  margin: 0.5rem 0;
 }
 
 .widget_archive ul,
@@ -4918,7 +5248,7 @@ body.page .main-navigation {
   color: #767676;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: calc(22px * 1.125);
-  font-weight: 700;
+  font-weight: 200;
   line-height: 1.2;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -4943,15 +5273,24 @@ body.page .main-navigation {
 .widget_recent_comments ul ul > li > a::before,
 .widget_recent_entries ul ul > li > a::before,
 .widget_rss ul ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
+.widget_tag_cloud h2 {
+  color: white;
+  margin: 0.5rem 0;
+}
+
 .widget_tag_cloud .tagcloud {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
+}
+
+.widget_search .search-form {
+  margin: 0.5rem 0;
 }
 
 .widget_search .search-field {
@@ -5303,7 +5642,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-categories ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -5334,7 +5673,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-verse {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lato", "Roboto", "Raleway", sans-serif;
   font-size: 22px;
   line-height: 1.8;
 }

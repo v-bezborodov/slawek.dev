@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50400a0d-3504-4d53-b9c1-461739352ad4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/myministry/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/myministry/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/myministry/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/myministry/print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/myministry/style-editor-customizer.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/myministry/style-editor-customizer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/myministry/style-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/myministry/style-editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/myministry/style-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/myministry/style-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/myministry/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/myministry/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/myministry/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/myministry/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +75,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
