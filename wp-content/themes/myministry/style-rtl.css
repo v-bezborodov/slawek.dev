@@ -4235,6 +4235,7 @@ body.page .main-navigation {
 
 .entry .entry-title {
   margin: 0;
+  text-align: center;
 }
 
 .entry .entry-title a {
