@@ -5,10 +5,10 @@
 
 	margin: calc(3 * 1rem) 0;
 
-	@include media(tablet) {
-		margin: calc(3 * 1rem) $size__site-margins;
-		max-width: calc(6 * (100vw / 12));
-	}
+	//@include media(tablet) {
+	//	margin: calc(3 * 1rem) $size__site-margins;
+	//	max-width: calc(6 * (100vw / 12));
+	//}
 
 	@include media(desktop) {
 		margin: calc(3 * 1rem) 0;
