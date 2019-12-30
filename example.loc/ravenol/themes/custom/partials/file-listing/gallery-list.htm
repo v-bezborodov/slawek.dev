@@ -1,0 +1,45 @@
+
+<section class="werbemittel">
+<div class="container">
+    {% if filelist %}
+    <div class="row">
+        {% for file in filelist %}
+        <!-- werbemittel__item -->
+        <div class="col-lg-3 col-md-3 col-6">
+            <div class="werbemittel__item">
+                <div class="werbemittel__item-shadow shadow">
+                    <div class="werbemittel__item-header d-flex">
+                        <div class="werbemittel__item-header--art"></div>
+                        <div class="werbemittel__item-header--name">Download | View</div>
+                    </div>
+                    <div class="werbemittel__item-img">
+                        <a href="{{file.publicUrl}}" target="_blank" >
+                            <img class="img-responsive" src="{{file.publicUrl}}" target="_blank" alt="{{file.filename}}">
+                        </a>
+                    </div>
+                </div>
+                <div class="werbemittel__item-link">
+                    <h5><a href="{{file.publicUrl}}" target="_blank">{{file.filename}}</a></h5>
+                </div>
+            </div>
+        </div>
+        <!-- werbemittel__item -->
+        {% endfor %}
+
+    </div>
+    {% else %}
+    No files
+    {% endif %}
+
+    <div class="row m-6 justify-content-center">
+        <div class="col-lg-2 ">
+            <div class="pagination-wrapper">
+                {{ filelist.render|raw }}
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>

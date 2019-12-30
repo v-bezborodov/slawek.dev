@@ -1,0 +1,22 @@
+title = "Home"
+url = "/"
+layout = "custom"
+description = "homepage"
+is_hidden = 0
+[user]
+[session]
+security = "user"
+redirect = "registration"
+==
+
+
+<?php
+dump(Session::all());
+?>
+<main  id="my-content" class="main__content">
+    <div class="container">
+        <div class="row">
+            This is Homepage
+        </div>
+    </div>
+</main>

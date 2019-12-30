@@ -1,0 +1,33 @@
+{% if filelist %}
+<div class="row file-search-result">
+    <div class="col-12">
+        <div class="table__wrap">
+            <table class="table table-responsive">
+                <thead class="">
+                <tr>
+                    <th>Art. <span class="wsnw">Number<i data-sort="articelnumber" class="sort fa fa-fw fa-sort"></i></span></th>
+                    <th><span class="wsnw">Name<i data-sort="download_name" class="sort fa fa-fw fa-sort"></i></span></th>
+                    <th><span class="wsnw">Language<i data-sort="language" class="sort fa fa-fw fa-sort"></i></span></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for file in filelist %}
+                <tr>
+                    <td>{{ file.art }}</td>
+                    <td><a href="{{ file.publicUrl }}" target="_blank">{{ file.filename }}</a></td>
+                    <?=basename(file.publicUrl)?>
+                    <?=base_path(file.path)?>
+                    <td>ES</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="pagination-wrapper">
+        {{ filelist.render|raw }}
+    </div>
+</div>
+{% else %}
+No files
+{% endif %}

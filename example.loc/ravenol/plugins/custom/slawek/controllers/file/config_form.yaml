@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: File
+
+# Model Form Field configuration
+form: $/custom/slawek/models/file/fields.yaml
+
+# Model Class name
+modelClass: Custom\Slawek\Models\File
+
+# Default redirect location
+defaultRedirect: custom/slawek/file
+
+# Create page
+create:
+    title: Create File
+    redirect: custom/slawek/file/update/:id
+    redirectClose: custom/slawek/file
+
+# Update page
+update:
+    title: Edit File
+    redirect: custom/slawek/file
+    redirectClose: custom/slawek/file
+
+# Preview page
+preview:
+    title: Preview File

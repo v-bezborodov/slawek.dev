@@ -1,0 +1,81 @@
+title = "Registration"
+url = "/registration"
+layout = "custom"
+description = "registration"
+is_hidden = 0
+[user]
+[session]
+
+==
+
+<!-- main -->
+{% if user == false %}
+<main  id="my-content" class="main__content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 main__title">
+                <div class="page__title-h1">Registration </div>
+                <div class="breadcrumbs__wrap text-center">
+                    <ul class="breadcrumbs">
+                        <li><a href="{{'home'|page}}">Ravenol</a></li>
+                        <li><a href="{{'registration'|page}}"><span>Registration</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Registration Form</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="form__registration shadow">
+                        <form target="_top" data-request="onRegister">
+                            <fieldset class="mt-3">
+                                <div class="form-group">
+                                    <label for="user-name" class="control-label">Name</label>
+                                    <input class="form-control" id="user-name" name="name" type="text">
+                                </div>
+                                <!--<div class="form-group">-->
+                                    <!--<label for="user-lastname" class="control-label">Lastname</label>-->
+                                    <!--<input class="form-control" id="user-lastname" name="lastname" type="text">-->
+                                <!--</div>-->
+                                <div class="form-group">
+                                    <label for="user-firma" class="control-label">Firma</label>
+                                    <input class="form-control" id="user-firma" name="company" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-city" class="control-label">City</label>
+                                    <input class="form-control" id="user-city" name="city" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-tel" class="control-label">Tel</label>
+                                    <input class="form-control" id="user-tel" name="phone" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-email" class="control-label">E-Mail</label>
+                                    <input class="form-control" id="user-email" name="email" type="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-password" class="control-label">Password</label>
+                                    <input class="form-control" id="user-password" name="password" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="btn form__button" type="submit" name="submit" value="Anmelden">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endif %}
+<!-- main -->

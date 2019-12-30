@@ -1,0 +1,57 @@
+title = "Pi"
+url = "/pi"
+layout = "custom"
+is_hidden = 0
+[user]
+[session]
+security = "all"
+
+[fileCustom]
+path = "custom-media"
+per-page = 10
+==
+{{fileCustom.onFilesCustomSearch}}
+
+<!-- main -->
+<main  id="my-content" class="main__content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 main__title">
+                <div class="page__title-h1">PI</div>
+                <div class="breadcrumbs__wrap text-center">
+                    <ul class="breadcrumbs">
+                        <li><a href="{{'home'|page}}">Ravenol</a></li>
+                        <li><a href="{{'pi'|page}}"><span>PI</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section__search">
+        <div class="container	container-fluid-max">
+            <form class="row  search__area shadow justify-content-center" role="form" data-request="onFilesCustomSearch" data-request-update="file-listing/file-list: '#result'">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <input placeholder="Search" type="text" name="search">
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="select">
+                        <i class="fas fa-caret-down"></i>
+                        <select name="tx_ravenolproducts_ravenolproducts[languageData]">
+                            <option value="0" selected="selected">Language</option>
+                            <option value="de">DE</option>
+                            <option value="e">EN</option>
+                            <option value="es">ES</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="input__wrap"><input class="btn btn-primary btn-large" type="submit" value="Search"></div>
+                </div>
+                <div class="col-12 reset d__flex"><span>X</span><span>clear all</span></div>
+            </form>
+            <!--Files listing-->
+            <div id="result">{% partial "file-listing/file-list" %}</div>
+        </div>
+    </section>
+</main>
+<!-- main -->

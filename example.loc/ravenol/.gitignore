@@ -1,0 +1,9 @@
+.DS_Store
+*.log
+.idea
+storage/framework/
+storage/cms/
+storage/temp/
+storage/app/media/*
+vendor/
+modules/

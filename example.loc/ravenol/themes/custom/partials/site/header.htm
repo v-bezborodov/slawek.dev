@@ -1,0 +1,163 @@
+description = "header"
+[session]
+==
+<!-- header -->
+<header id="my-header" class="main__header">
+    <!--Flash messages-->
+    {% flash %}
+    <p data-control="flash-message" data-interval="5" class="success">
+        {{ message }}
+    </p>
+    {% endflash %}
+
+    <!-- main__header-top-wrap -->
+    <div class="main__header-top--wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main__header-top d__flex">
+                        <div class="main__header-top--link hidden__lg">
+                            <a href="/" class="hidden__lg">Homepage</a>
+                        </div>
+                        <div class="main__header-top--oilfinder hidden__lg">
+                            <a href="#modal__oilfinder" id="oilfinder" data-fancybox data-animation-duration="500"><span>Ölfinder</span></a>
+                        </div>
+                        <div class="main__header-top--language">
+                            <!--ul id="language_menu" class="language__menu">
+                                <li><a href="#" ><img src="img/Icons/Flags/PNG/DE.png" class="hidden__sm" alt="Flags">DE</a></li>
+                                <li><a href="#" class=""><img src="img/Icons/Flags/PNG/GB.png" class="hidden__sm" alt="Flags">EN</a></li>
+                            </ul-->
+                        </div>
+                        <div class="main__header-top--login hidden__sm">
+                            {% if user %}
+                            <a href="" id="login" class="login-link" >Hi,  {{ user.name }}</a>
+                            <a href="" class="login-link" data-request="onLogout" data-request-data="redirect: '/'">Sign out</a>
+                            {% else %}
+                            <a href="#login__modal" id="login" class="login-link" data-fancybox data-animation-duration="700"> Login</a>
+                            {% endif %}
+                            <ul class="login__list">
+                                <li><a href="#">Downloads</a></li>
+                                <li><a href="#modal__atffinder"  data-fancybox data-animation-duration="500">ATF-Finder</a></li>
+                                <li><a href="#"> Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main__header-top-wrap -->
+
+            <!-- main__header-nav -->
+
+            <div class="col-12 main__header-nav d__flex">
+
+                <div class="main__header-logo">
+                    <a href="/"><img src="https://www.ravenol.de/fileadmin/Asset/Images/logo%20RAVENOL%402x.png" class="img-responsive" alt="Logo"></a>
+                </div>
+
+                <!--nav class="main__header-menu navbar">
+                    <div id="navbar" class="navbar__wrap">
+                        <ul class="nav main__menu">
+                            <li class="li__submenu">
+                                <a href="#">Unternehmen</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Über Uns</a></li>
+                                    <li><a href="#">Weltweit</a></li>
+                                    <li><a href="#">Qualität</a></li>
+                                    <li><a href="#">Umwelt</a></li>
+                                    <li class="li__submenu">
+                                        <a href="#">Innovationen</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Forschung &amp; Entwicklung</a></li>
+                                            <li><a href="#">CleanSynto</a></li>
+                                            <li><a href="#">Verpackungsinnovation</a></li>
+                                            <li><a href="#">Öl-Verkaufsständer</a></li>
+                                            <li><a href="#">Bag-In-Box</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="li__submenu">
+                                        <a href="#">Karriere</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Offene Stellen</a></li>
+                                            <li><a href="#">Ausbildung</a></li>
+                                            <li><a href="#">Praktikum</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li__submenu">
+                                <a href="#">Produkte</a>
+                                <ul class="submenu products">
+                                    <li class="li__submenu">
+                                        <a href="#">Produktgruppen</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">PKW Motorenöle</a></li>
+                                            <li><a href="#">ATF‐Getriebeöle für Automatikgetriebe</a></li>
+                                            <li><a href="#">Getriebeöle für Schaltgetriebe und Antriebsachsen</a></li>
+                                            <li><a href="#">Rallye- / Racing Öle</a></li>
+                                            <li><a href="#">Oldtimer Classic</a></li>
+                                            <li><a href="#">Motobike / Motogear / Forkoil / Zubehör</a></li>
+                                            <li><a href="#">2-Takt und 4-Takt-Kleinmotoren</a></li>
+                                            <li><a href="#">LKW Motorenöle</a></li>
+                                            <li><a href="#">Landmaschinen / Traktorenöle</a></li>
+                                            <li><a href="#">Special Fluids, Servolenkungs- und Spezial-Hydrauliköle</a></li>
+                                            <li><a href="#">Bremsflüssigkeit</a></li>
+                                            <li><a href="#">Marineöle</a></li>
+                                            <li><a href="#">Hydrauliköle / Kompressorenöle</a></li>
+                                            <li><a href="#">Industrieöle / Spezialitäten</a></li>
+                                            <li><a href="#">Fette</a></li>
+                                            <li><a href="#">Autopflege / Reiniger / Zubehör</a></li>
+                                            <li><a href="#">Additive</a></li>
+                                            <li><a href="#">Frostschutz und Winterchemie</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="li__submenu">
+                                        <a href="#">Einsatzgebiete</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">PKW</a></li>
+                                            <li><a href="#">LKW</a></li>
+                                            <li><a href="#">Motorrad</a></li>
+                                            <li><a href="#">Marine</a></li>
+                                            <li><a href="#">Industrie</a></li>
+                                            <li><a href="#">Landmaschinen</a></li>
+                                            <li><a href="#">Oldtimer</a></li>
+                                            <li><a href="#">Hobby&amp;Garten</a></li>
+                                            <li><a href="#">Werkstattausrüstung</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                            <li class="li__submenu">
+                                <a href="#">Motorsport</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Racing</a></li>
+                                    <li><a href="#">Partnerschaften</a></li>
+                                    <li><a href="#">Termine</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Werbemittel</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav-->
+                <div class="main__header-search d__flex">
+                    <!--div class="indexedsearchbox">
+                        <form>
+                            <input type="text"  placeholder="Suche" class="searchbox-sword">
+                            <button type="submit" class="lupe"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div-->
+                </div>
+                <a href="#my-menu" class="hamburger hamburger--spring hidden__lg">
+                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- main__header-nav -->

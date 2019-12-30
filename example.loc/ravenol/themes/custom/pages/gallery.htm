@@ -1,0 +1,53 @@
+title = "Gallery"
+url = "/gallery"
+layout = "custom"
+is_hidden = 0
+
+[user]
+
+[session]
+security = "user"
+redirect = "registration"
+
+[fileCustom]
+path = "gallery"
+per-page = 8
+==
+{{fileCustom.onGalleryCustomSearch}}
+<!-- main -->
+<main  id="my-content" class="main__content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 main__title">
+                <div class="page__title-h1">Printmedien</div>
+                <div class="breadcrumbs__wrap text-center">
+                    <ul class="breadcrumbs">
+                        <li><a href="{{'home'|page}}">Ravenol</a></li>
+                        <li><a href="{{'gallery'|page}}"><span>Gallery</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section__search">
+        <div class="container	container-fluid-max">
+            <form class="row  search__area shadow justify-content-center" data-request="onGalleryCustomSearch" data-request-update="file-listing/gallery-list: '#result'">
+                <div class="col-xl-6 col-lg-6 col-md-10">
+                    <input placeholder="Search" type="text" name="search">
+                </div>
+
+                <div class="col-10">
+                    <div class="input__wrap"><input class="btn btn-primary btn-large" type="submit" value="Search"></div>
+                </div>
+                <div class="col-10 reset d__flex"><span>X</span><span>clear all</span></div>
+            </form>
+
+            <!--Files listing-->
+            <div id="result">{% partial "file-listing/gallery-list" %}</div>
+
+            </section>
+        </div>
+    </section>
+</main>
+<!-- main -->
