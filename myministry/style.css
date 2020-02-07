@@ -3713,10 +3713,6 @@ body.page .main-navigation {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-header {
-  padding: 1em;
-}
-
 .site-header.featured-image {
   display: flex;
   flex-direction: column;
@@ -4457,6 +4453,7 @@ body.page .main-navigation {
 .entry .entry-content,
 .entry .entry-summary {
   margin: 0 0.5rem;
+  text-align: justify;
 }
 
 @media only screen and (min-width: 768px) {
