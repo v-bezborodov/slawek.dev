@@ -50,6 +50,7 @@
 }
 .entry {
 	margin-top: 0;
+	width:100%;
 
 	
 
@@ -195,14 +196,14 @@
 
 		
 
-		@include media(tablet) {
-			
-			max-width: $size__site-tablet-content;
-		}
-
-		@include media(tablet) {
-			max-width: $size__site-desktop-content;
-		}
+		//@include media(tablet) {
+		//
+		//	max-width: $size__site-tablet-content;
+		//}
+		//
+		//@include media(tablet) {
+		//	max-width: $size__site-desktop-content;
+		//}
 		.meta-comments-edit{
 			display: flex;
 			flex-direction: row;
