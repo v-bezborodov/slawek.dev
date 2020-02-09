@@ -7,12 +7,15 @@
  * @since 1.0.0
  */
 ?>
+
 <div class="site-branding">
 
 	<?php if ( has_custom_logo() ) : ?>
 		<div class="site-logo"><?php the_custom_logo(); ?></div>
 	<?php endif; ?>
-	<div class="site-header-image">
+    <i class="fa fa-list-alt" aria-hidden="true"></i>
+
+    <div class="site-header-image">
 		<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/myministry/img/MYMINISTRY_7.png">
 	</div>
 	<?php $blog_info = get_bloginfo( 'name' ); ?>

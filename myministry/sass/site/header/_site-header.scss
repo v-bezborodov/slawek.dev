@@ -88,25 +88,24 @@
 
 .site-title-wrapper{
 	display: inline-block;
-border: 1px solid #6e6e6e;
-background-color: white;
-border-radius: 40px;
-padding-bottom: 0.3vw;
-padding-top: 0.3vw;
+	border: 1px solid #6e6e6e;
+	background-color: white;
+	border-radius: 40px;
+	padding-bottom: 0.3vw;
+	padding-top: 0.3vw;
 }
 .site-title {
 	//margin: auto;
-	//display: inline;
+	display: inline;
 	//color: $color__text-main;
-text-transform: uppercase;
-color: #f47e7e;
-font-size: 2vw;
-font-weight: 300;
-line-height: 1.1;
-
-padding: 0 15px;
-vertical-align: middle;
-margin-bottom: 0;
+	text-transform: uppercase;
+	color: #f47e7e;
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 1.1;
+	padding: 0 15px;
+	vertical-align: middle;
+	margin-bottom: 0;
 
 
 	a {
@@ -136,7 +135,10 @@ margin-bottom: 0;
 	}
 
 	@include media(tablet) {
-		display: inline;
+		font-size: 1.5em;
+	}
+	@include media(mobile) {
+		font-size: 1em;
 	}
 
 	&:not(:empty) + .site-description:not(:empty):before {

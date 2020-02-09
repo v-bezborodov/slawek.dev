@@ -52,6 +52,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url(./vendors/fontawesome-free/css/all.css);
+@import url(./vendors/fontawesome-free/css/fontawesome.css);
+@import url(./vendors/fontawesome-free/css/brands.css);
+@import url(./vendors/fontawesome-free/css/regular.css);
+@import url(./vendors/fontawesome-free/css/svg-with-js.css);
+@import url(./vendors/fontawesome-free/css/v4-shims.css);
 /*
  * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
  * This results in a jumping cursor when typing in both the Classic and block
@@ -59,6 +65,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * a custom font that includes just a Hoefler Text space replacement for that
  * character instead.
  */
+@import url(./vendors/fontawesome-free/css/all.css);
+@import url(./vendors/fontawesome-free/css/fontawesome.css);
+@import url(./vendors/fontawesome-free/css/brands.css);
+@import url(./vendors/fontawesome-free/css/regular.css);
+@import url(./vendors/fontawesome-free/css/svg-with-js.css);
+@import url(./vendors/fontawesome-free/css/v4-shims.css);
 @font-face {
   font-family: 'NonBreakingSpaceOverride';
   src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAA0AAAAACDQAAALTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCahEICjx3CywAATYCJANUBCAFhiEHgWwbXQfILgpsY+rQRRARwyAs6uL7pxzYhxEE+32b3aeHmifR6tklkS9hiZA0ewkqGRJE+H7/+6378ASViK/PGeavqJyOzsceKi1s3BCiQsiOdn1r/RBgIJYEgCUhbm/8/8/h4saPssnTNkkiWUBrTRtjmQSajw3Ui3pZ3LYDPD+XG2C3JA/yKAS8/rU5eNfuGqRf4eNNgV4YAlIIgxglEkWe6FYpq10+wi3g+/nUgvgPFczNrz/RsTgVm/zfbPuHZlsuQECxuyqBcQwKFBjFgKO8AqP4bAN9tFJtnM9xPcbNjeXS/x1wY/xU52f5W/X1+9cnH4YwKIaoRRAkUkj/YlAAeF/624foiIDBgBmgQBeGAyhBljUPZUm/l2dTvmpqcBDUOHdbPZWd8JsBAsGr4w8/EDn82/bUPx4eh0YNrQTBuHO2FjQEAGBwK0DeI37DpQVqdERS4gZBhpeUhWCfLFz7J99aEBgsJCHvUGAdAPp4IADDCAPCEFMGpMZ9AQpTfQtQGhLbGVBZFV8BaqNyP68oTZgHNj3M8kBPfXTTC9t90UuzYhy9ciH0grVlOcqyCytisvbsERsEYztiznR0WCrmTksJwbSNK6fd1Rvr25I9oLvctUoEbNOmXJbqgYgPXEHJ82IUsrCnpkxh23F1rfZ2zcRnJYoXtauB3VTFkFXQg3uoZYD5qE0kdjDtoDoF1h2bulGmev5HbYhbrjtohQSRI4aNOkffIcT+d3v6atpaYh3JvPoQsztCcqvaBkppDSPcQ3bw3KaCBo1f5CJWTZEgW3LjLofYg51MaVezrx8xZitYbQ9KYeoRaqQdVLwSEfrKXLK1otCWOKNdR/YwYAfon5Yk8O2MJfSD10dPGA5PIJJQMkah0ugMJiv6x4Dm7LEa8xnrRGGGLAg4sAlbsA07sAt76DOsXKO3hIjtIlpnnFrt1qW4kh6NhS83P/6HB/fl1SMAAA==) format("woff2"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUQAA0AAAAACDQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE9AAAABwAAAAchf5yU0dERUYAAATYAAAAHAAAAB4AJwAbT1MvMgAAAaAAAABJAAAAYJAcgU5jbWFwAAACIAAAAF4AAAFqUUxBZ2dhc3AAAATQAAAACAAAAAgAAAAQZ2x5ZgAAApAAAAAyAAAAPL0n8y9oZWFkAAABMAAAADAAAAA2Fi93Z2hoZWEAAAFgAAAAHQAAACQOSgWaaG10eAAAAewAAAAzAAAAVC7TAQBsb2NhAAACgAAAABAAAAAsAOQBAm1heHAAAAGAAAAAHQAAACAAWQALbmFtZQAAAsQAAAF6AAADIYvD/Adwb3N0AAAEQAAAAI4AAADsapk2o3jaY2BkYGAA4ov5mwzj+W2+MnCzXwCKMNzgCBSB0LfbQDQ7AxuI4mBgAlEAFKQIRHjaY2BkYGD3+NvCwMDBAALsDAyMDKhAFAA3+wH3AAAAeNpjYGRgYBBl4GBgYgABEMnIABJzAPMZAAVmAGUAAAB42mNgZlJhnMDAysDCKsKygYGBYRqEZtrDYMT4D8gHSmEHjgUFOQwODAqqf9g9/rYwMLB7MNUAhRlBcsxBrMlASoGBEQAj8QtyAAAAeNrjYGBkAAGmWQwMjO8gmBnIZ2NA0ExAzNjAAFYJVn0ASBsD6VAIDZb7AtELAgANIgb9AHjaY2BgYGaAYBkGRgYQSAHyGMF8FgYPIM3HwMHAxMDGoMCwQIFLQV8hXvXP//9AcRCfAcb///h/ygPW+w/vb7olBjUHCTCyMcAFGZmABBO6AogThgZgIUsXAEDcEzcAAHjaY2BgECMCyoEgACZaAed42mNgYmRgYGBnYGNgYAZSDJqMgorCgoqCjECRXwwNrCAKSP5mAAFGBiRgyAAAi/YFBQAAeNqtkc1OwkAUhU/5M25cEhcsZick0AwlBJq6MWwgJkAgYV/KAA2lJeUn+hY+gktXvpKv4dLTMqKycGHsTZNv7px7z50ZAFd4hYHjdw1Ls4EiHjVncIFnzVnc4F1zDkWjrzmPW+NNcwGlzIRKI3fJlUyrEjZQxb3mDH2fNGfRx4vmHKqG0JzHg6E0F9DOlFBGBxUI1GEzLNT4S0aLuTtsGAEUuYcQHkyg3KmIum1bNUvKlrjbbAIleqHHnS4iSudpQcySMYtdFiXlAxzSbAwfMxK6kZoHKhbjjespMTioOPZnzI+4ucCeTVyKMVKLfeAS6vSWaTinuZwzyy/Dc7vaed+6KaV0kukdPUk6yOcctZPvvxxqksq2lEW8RvHjMEO2FCl/zy6p3NEm0R9OFSafJdldc4QVeyaaObMBO0/5cCaa6d9Ggyubxire+lEojscdjoWUR1xGOy8KD8mG2ZLO2l2paDc3A39qmU2z2W5YNv5+u79e6QfGJY/hAAB42m3NywrCMBQE0DupWp/1AYI7/6DEaLQu66Mrd35BKUWKJSlFv1+rue4cGM7shgR981qSon+ZNwUJ8iDgoYU2OvDRRQ99DDDECAHGmGCKmf80hZSx/Kik/LliFbtmN6xmt+yOjdg9GztV4tROnRwX/Bsaaw51nt4Lc7tWaZYHp/MlzKx51LZs5htNri+2AAAAAQAB//8AD3jaY2BkYGDgAWIxIGZiYARCESBmAfMYAAR6AEMAAAABAAAAANXtRbgAAAAA2AhRFAAAAADYCNuG) format("woff");
@@ -82,6 +94,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @font-face {
   font-family: 'Raleway', sans-serif;
   src: url("https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto");
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("./vendors/fontawesome-free/webfonts/fa-regular-400.eot");
+  src: url("./vendors/fontawesome-free/webfonts/fa-regular-400.eot");
+  src: url("./vendors/fontawesome-free/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./vendors/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"), url("./vendors/fontawesome-free/webfonts/fa-regular-400.woff") format("woff"), url("./vendors/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"), url("./vendors/fontawesome-free/webfonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
@@ -3799,9 +3821,10 @@ body.page .main-navigation {
 }
 
 .site-title {
+  display: inline;
   text-transform: uppercase;
   color: #f47e7e;
-  font-size: 2vw;
+  font-size: 2em;
   font-weight: 300;
   line-height: 1.1;
   padding: 0 15px;
@@ -3838,7 +3861,13 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .site-title {
-    display: inline;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .site-title {
+    font-size: 1em;
   }
 }
 
@@ -4196,7 +4225,7 @@ body.page .main-navigation {
   flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: center;
-  width: 910px;
+  max-width: 910px;
   margin: 0 auto;
 }
 
@@ -4258,6 +4287,10 @@ body.page .main-navigation {
   opacity: 0.5;
 }
 
+.entry .entry-categories-tags .entry-tags a:before {
+  content: '#';
+}
+
 .entry .entry-categories-tags .tags-links, .entry .entry-categories-tags .cat-links {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -4312,6 +4345,29 @@ body.page .main-navigation {
   margin: 0.1rem;
   border: 1px solid #dee2e6;
   display: inline;
+}
+
+.entry .entry-categories-tags .post-categories li:before {
+  content: "\f042";
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.3;
+}
+
+.entry .entry-categories-tags .post-categories li:after {
+  display: inline-block;
+  content: "\f840";
+  font-family: 'Font Awesome 5 Free';
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.3;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
 }
 
 .entry .entry-categories-tags .post-categories a {

@@ -72,22 +72,26 @@ if ( ! function_exists( 'twentynineteen_thumbnail_categories_and_tags' ) ) :
 			/* translators: used between list items, there is a space after the comma. */
 			$categories_list = get_the_category_list();
 			if ( $categories_list ) {
+                printf('<div class="entry-categories">');
 				printf(
 					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
 					'<span class="cat-links"><span class="screen-reader-text">%1$s</span></span>',
 					__( 'Posted in', 'twentynineteen' )); // WPCS: XSS OK.
 
 				printf($categories_list); // WPCS: XSS OK.
+                printf("</div>");
 			}
 
 			/* translators: used between list items, there is a space after the comma. */
 			$tags_list = get_the_tag_list();
 			if ( $tags_list ) {
+                printf('<div class="entry-tags">');
 				printf(
 					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */
 					'<span class="tags-links"><span class="screen-reader-text">%1$s </span></span>',
 					__( 'Tags:', 'twentynineteen' )); // WPCS: XSS OK.
 				printf($tags_list);
+				printf("</div>");
 			}
 
 
