@@ -151,30 +151,11 @@
 								display: inline;
 
 								&:before{
-									content:"\f042";
-									//content: "\f002";
-									//font-family: 'FontAwesome';
-									font-family: "Font Awesome 5 Free";
+									content:'\f35a';
+									font-family: 'Font Awesome\ 5 Free';
 									font-size: 0.7rem;
 									color: black;
 									opacity: 0.3;
-								}
-								&:after{
-									display: inline-block;
-									//content: "\f002";
-									content: "\f840";
-									//font-family: 'FontAwesome';
-									//font-family: 'Font Awesome 5 Brands';
-									font-family: 'Font Awesome 5 Free';
-									font-size: 0.7rem;
-									color: black;
-									opacity: 0.3;
-									-webkit-font-smoothing: antialiased;
-									display: inline-block;
-									font-style: normal;
-									font-variant: normal;
-									text-rendering: auto;
-									line-height: 1;
 								}
 							}
 							a{

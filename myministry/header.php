@@ -17,16 +17,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
     <?php wp_head(); ?>
-    <link rel='stylesheet' href='<?php echo get_template_directory_uri();?>/node_modules/@fortawesome/fontawesome-free/css/all.min.css' type='text/css' media='all'/>
     <script type='text/javascript' src='<?php echo get_template_directory_uri();?>/node_modules/@fortawesome/fontawesome-free/js/all.min.js'></script>
 
 </head>
 
 <body <?php body_class(); ?>>
-<i class="fas fa-adjust"></i>
-<i class="fa fa-adjust"></i>
-<i class="fas fa-camera"></i>
-<i class="fas fa-yammer"></i>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 

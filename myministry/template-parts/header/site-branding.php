@@ -13,7 +13,6 @@
 	<?php if ( has_custom_logo() ) : ?>
 		<div class="site-logo"><?php the_custom_logo(); ?></div>
 	<?php endif; ?>
-    <i class="fa fa-list-alt" aria-hidden="true"></i>
 
     <div class="site-header-image">
 		<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/myministry/img/MYMINISTRY_7.png">
