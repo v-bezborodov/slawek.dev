@@ -4322,7 +4322,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-categories-tags .post-categories li:before {
-  content: '\f36a';
+  content: '\f35a';
   font-family: 'Font Awesome\ 5 Free';
   font-size: 0.7rem;
   color: black;
