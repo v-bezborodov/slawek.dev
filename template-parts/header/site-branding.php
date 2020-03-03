@@ -15,7 +15,8 @@
 	<?php endif; ?>
 
     <div class="site-header-image">
-		<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/myministry/img/MYMINISTRY_7.png">
+        <a href="/">
+		<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/myministry/img/MYMINISTRY_7.png"></a>
 	</div>
 	<?php $blog_info = get_bloginfo( 'name' ); ?>
 	<?php if ( ! empty( $blog_info ) ) : ?>

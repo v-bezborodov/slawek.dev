@@ -22,6 +22,8 @@ get_header();
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
+            <div class="archive-wrapper">
+
 
 			<?php
 			// Start the Loop.
@@ -47,6 +49,7 @@ get_header();
 
 		endif;
 		?>
+            </div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

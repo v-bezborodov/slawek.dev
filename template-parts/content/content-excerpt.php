@@ -10,7 +10,7 @@
  */
 
 ?>
-<div class="post-page-wrapper container">
+<div class="post-page-wrapper col-4 col-sm-12">
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

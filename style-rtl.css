@@ -3705,6 +3705,14 @@ body.page .main-navigation {
   overflow: hidden;
 }
 
+.category .archive-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 2em;
+}
+
 /* Content */
 /*--------------------------------------------------------------
 ## Header
