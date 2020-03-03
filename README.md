@@ -5,10 +5,9 @@ slawek.dev v1.0
  `
  |-themes
  |  |-myministry
- |      |-myministry(your theme here)
  |      |-.git
- |          |-all styles and html
- | -uploads
+ |      |-all styles and html
+ |-uploads
  `
  
  #on prod perform
