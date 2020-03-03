@@ -22,8 +22,16 @@
 	flex-wrap:wrap;
 	flex-flow: row wrap;
 	justify-content: center;
-	width: 910px;
 	margin: 0 auto;
+	@include media(mobile) {
+		width: 100%;
+	}
+	@include media(tablet) {
+		width: 100%;
+	}
+	@include media(wide) {
+		width: 910px;
+	}
 }
 .post-page-wrapper{
 	display:flex;
